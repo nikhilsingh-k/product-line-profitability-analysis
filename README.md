@@ -68,9 +68,7 @@ An interactive dashboard was built using **Streamlit** to allow:
 - KPI monitoring
 
 ### To run the dashboard locally:
-'''bash
-pip install -r requirements.txt
-streamlit run app/app.py
+python -m streamlit run app/app.py
 
 ---
 
