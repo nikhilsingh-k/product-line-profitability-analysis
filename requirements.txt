@@ -1,3 +1,4 @@
-streamlit
-pandas
-matplotlib
+# requirements.txt
+streamlit>=1.38.0          # core framework
+pandas>=2.0.0              # data processing
+plotly>=5.15.0             # interactive charts (px and go)
