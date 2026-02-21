@@ -198,5 +198,5 @@ Nikhil Kumar Singh
 BCA (AI & ML) Student  
 Aspiring AI & Software Engineer | Machine Learning | Data Analytics  
 
-GitHub: https://github.com/nikhilsingh-k  
+GitHub  : https://github.com/nikhilsingh-k  
 LinkedIn: https://www.linkedin.com/in/nikhilsingh-k/
