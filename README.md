@@ -1,129 +1,109 @@
-Nassau Candy Distributor – Profitability & Margin Dashboard
+# **Nassau Candy Distributor – Profitability & Margin Dashboard**
 
-An interactive business intelligence dashboard built using Streamlit to analyze product-level and division-level profitability.
+An interactive Business Intelligence dashboard built using **Streamlit** to analyze product-level and division-level profitability.
 
-This project transforms raw transactional order data into actionable financial insights focused on gross margin performance, profit concentration, and cost diagnostics.
+This project transforms raw transactional order data into actionable financial insights focused on **gross margin performance, profit concentration, cost diagnostics, and financial efficiency**.
 
-Project Objective
+---
 
-For distributors, high sales volume does not always mean high profitability.
+## **Project Objective**
+
+High sales volume does not always translate to high profitability.  
 This dashboard answers critical business questions:
 
-Which products truly drive gross profit?
+- Which products truly drive gross profit?
+- Are high-revenue products actually high-margin?
+- Which divisions underperform financially?
+- How concentrated is overall profit?
+- Where do margin risks and pricing inefficiencies exist?
 
-Are high-revenue products actually high-margin?
+The goal is to enable **margin-focused, data-driven decision-making** instead of relying solely on revenue metrics.
 
-Which divisions underperform financially?
+---
 
-How concentrated is overall profit?
+## **Key Features**
 
-Where do margin risks exist?
+### **Interactive Filters**
+- Order date range selector  
+- Division multi-select filter  
+- Minimum gross margin threshold slider  
+- Product name search  
+- AND-based filtering logic  
 
-The goal is to move beyond revenue metrics and enable margin-focused decision-making.
+---
 
-Key Features
-Interactive Filters
+### **KPI Overview**
+- Total Sales  
+- Gross Profit  
+- Gross Margin (%)  
+- Profit per Unit  
+- Rows shown (filtered dataset size)  
 
-Order date range selector
+---
 
-Division multi-select filter
+### **Product Profitability Analysis**
+- Top products by Gross Profit  
+- Top products by Gross Margin %  
+- Revenue Contribution %  
+- Profit Contribution %  
+- Profit per Unit  
+- Expandable detailed product-level KPI table  
 
-Minimum gross margin threshold slider
+---
 
-Product name search
+### **Division Performance Dashboard**
+- Revenue vs Gross Profit comparison  
+- Margin distribution by division  
+- Cross-division profitability comparison  
 
-All filters use AND logic for precise slicing.
+---
 
-KPI Overview
+### **Cost vs Margin Diagnostics**
+- Cost vs Sales scatter plot (bubble size represents profit)  
+- Identification of cost-heavy, low-margin products  
+- Dynamic margin-risk flagging  
 
-Total Sales
+---
 
-Gross Profit
+### **Profit Concentration (Pareto) Analysis**
+- Profit contribution by product  
+- Cumulative profit percentage curve  
+- Dependency indicators:
+  - % of profit from top 3 products  
+  - % of profit from top 5 products  
+  - % of profit from top 10 products  
+  - Number of products generating approximately 80% of total profit  
 
-Gross Margin (%)
+---
 
-Profit per Unit
+### **Margin Volatility Analysis**
+- Monthly average gross margin trend  
+- Margin standard deviation over time  
+- Identification of unstable pricing or cost patterns  
 
-Rows Shown (Filtered Records)
+---
 
-Product Profitability Analysis
+### **Data Export**
+- Download filtered dataset as CSV  
 
-Top products by Gross Profit
+---
 
-Top products by Gross Margin %
+## **Tech Stack**
 
-Revenue Contribution %
+- Python  
+- Streamlit  
+- Pandas  
+- Plotly (Express and Graph Objects)  
+- Data Visualization  
+- Exploratory Data Analysis (EDA)  
 
-Profit Contribution %
+---
 
-Profit per Unit
+## **Project Structure**
 
-Full expandable product-level KPI table
-
-Division Performance Dashboard
-
-Revenue vs Gross Profit comparison
-
-Margin distribution by division (box plot)
-
-Cross-division profitability comparison
-
-Cost vs Margin Diagnostics
-
-Cost vs Sales scatter plot (bubble size = profit)
-
-Margin-risk product identification
-
-Detects:
-
-Cost-heavy, low-margin SKUs
-
-Pricing inefficiencies
-
-Structural margin weakness
-
-Profit Concentration (Pareto) Analysis
-
-Top profit-contributing products
-
-Cumulative profit curve
-
-Dependency indicators:
-
-% profit from top 3 products
-
-% profit from top 5 products
-
-% profit from top 10 products
-
-Number of products generating ~80% of profit
-
-Margin Volatility Analysis
-
-Monthly average gross margin trend
-
-Margin standard deviation (volatility)
-
-Identifies unstable pricing or cost fluctuations over time
-
-Data Export
-
-Download filtered dataset as CSV
-
-Tech Stack
-
-Python
-
-Streamlit
-
-Pandas
-
-Plotly (Express + Graph Objects)
-
-Data Visualization & Exploratory Data Analysis (EDA)
-
-Project Structure
+```
 project-root/
+
 │
 ├── app/
 │   └── app.py
@@ -133,73 +113,80 @@ project-root/
 │
 ├── requirements.txt
 └── README.md
-How to Run Locally
+```
+
+---
+
+## **How to Run Locally**
 
 Install dependencies:
 
+```
 pip install -r requirements.txt
+```
 
 Run the dashboard:
 
+```
 streamlit run app/app.py
+```
 
 The application will open in your browser at:
 
+```
 http://localhost:8501
-Deployment
+```
 
-This dashboard is deployed using Streamlit Cloud with GitHub integration.
+---
 
-Public deployment link available on profile.
+## **Deployment**
 
-Business Insights Generated
+This dashboard is deployed using **Streamlit Cloud** with GitHub integration, enabling real-time interaction and cloud-based access.
 
-A small subset of products generates the majority of total profit.
+---
 
-Some high-revenue products operate at low margins.
+## **Business Insights Generated**
 
-Certain divisions show revenue-profit imbalance.
+- A small subset of products contributes the majority of total profit  
+- Some high-revenue products operate at low margins  
+- Certain divisions show imbalance between revenue and profitability  
+- Margin-risk products are dynamically identified  
+- Profit concentration reveals dependency risks  
+- Margin volatility highlights financial instability periods  
 
-Margin-risk products are flagged dynamically.
+---
 
-Profit concentration exposes dependency risk.
+## **Strategic Recommendations**
 
-Margin volatility analysis highlights financial instability periods.
+- Reprice high-volume, low-margin products  
+- Renegotiate manufacturing or sourcing costs  
+- Review consistently loss-making products  
+- Diversify profit sources to reduce dependency risk  
+- Monitor margin volatility to stabilize financial performance  
 
-Strategic Recommendations
+---
 
-Reprice high-volume, low-margin products.
+## **Conclusion**
 
-Renegotiate manufacturing or sourcing costs.
+This project demonstrates how profitability-focused analytics enables smarter business decisions.
 
-Review consistently loss-making products.
+By transforming transactional order data into an interactive analytics dashboard, stakeholders gain visibility into margin performance, product efficiency, and structural financial risks.
 
-Diversify profit sources to reduce concentration risk.
+The solution showcases end-to-end analytical capability, including:
 
-Monitor monthly margin volatility to stabilize financial performance.
+- Data cleaning  
+- KPI engineering  
+- Aggregation  
+- Visualization  
+- Cloud deployment  
 
-Conclusion
+---
 
-This project demonstrates how profitability-focused analytics can drive smarter business decisions.
+## **Author**
 
-Rather than relying on sales volume alone, the dashboard enables:
+**Nikhil Singh**  
+BCA (AI & ML) Student  
+Machine Learning & Data Analytics Enthusiast  
 
-Margin optimization
-
-Risk mitigation
-
-Portfolio rationalization
-
-Financial efficiency improvement
-
-It showcases end-to-end data analytics workflow — from cleaning and aggregation to interactive business intelligence deployment.
-
-Author
-
-Built by Nikhil Singh
-BCA (AI & ML) Student
-Machine Learning & Data Analytics Enthusiast
-
-GitHub: https://github.com/nikhilsingh-k
-
-LinkedIn: https://www.linkedin.com/in/nikhilsingh-k/
+GitHub: https://github.com/nikhilsingh-k  
+LinkedIn: https://www.linkedin.com/in/nikhilsingh-k  
