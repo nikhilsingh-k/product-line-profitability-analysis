@@ -1,109 +1,124 @@
-# **Nassau Candy Distributor – Profitability & Margin Dashboard**
+# Nassau Candy Distributor – Profitability & Margin Dashboard
 
-An interactive Business Intelligence dashboard built using **Streamlit** to analyze product-level and division-level profitability.
+[Live Application](https://nikhil-profitability-dashboard.streamlit.app/)
 
-This project transforms raw transactional order data into actionable financial insights focused on **gross margin performance, profit concentration, cost diagnostics, and financial efficiency**.
-
----
-
-## **Project Objective**
-
-High sales volume does not always translate to high profitability.  
-This dashboard answers critical business questions:
-
-- Which products truly drive gross profit?
-- Are high-revenue products actually high-margin?
-- Which divisions underperform financially?
-- How concentrated is overall profit?
-- Where do margin risks and pricing inefficiencies exist?
-
-The goal is to enable **margin-focused, data-driven decision-making** instead of relying solely on revenue metrics.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-purple)
+![Deployment](https://img.shields.io/badge/Deployment-Live-green)
 
 ---
 
-## **Key Features**
+## Overview
 
-### **Interactive Filters**
-- Order date range selector  
+This project is an end-to-end profitability analytics dashboard built using Streamlit.  
+It analyzes product-level and division-level financial performance to uncover margin inefficiencies, profit concentration risks, and cost-performance mismatches.
+
+The dashboard transforms raw transactional order data into actionable business intelligence for strategic decision-making.
+
+---
+
+## Business Problem
+
+High sales volume does not always translate into high profitability.
+
+Distributors often face challenges such as:
+
+- High-volume products generating low margins  
+- Revenue-profit imbalance across divisions  
+- Hidden cost-heavy SKUs  
+- Profit concentration risk from limited products  
+
+This dashboard provides a structured analytical framework to identify and address these issues.
+
+---
+
+## Core Features
+
+### Interactive Filtering
+- Order date range selection  
 - Division multi-select filter  
 - Minimum gross margin threshold slider  
 - Product name search  
-- AND-based filtering logic  
+- AND-based filter logic  
 
----
-
-### **KPI Overview**
+### KPI Dashboard
 - Total Sales  
 - Gross Profit  
 - Gross Margin (%)  
 - Profit per Unit  
-- Rows shown (filtered dataset size)  
+- Filtered record count  
 
----
-
-### **Product Profitability Analysis**
+### Product-Level Profitability
 - Top products by Gross Profit  
 - Top products by Gross Margin %  
 - Revenue Contribution %  
 - Profit Contribution %  
-- Profit per Unit  
-- Expandable detailed product-level KPI table  
+- Expandable detailed KPI table  
 
----
-
-### **Division Performance Dashboard**
+### Division Performance Analysis
 - Revenue vs Gross Profit comparison  
-- Margin distribution by division  
-- Cross-division profitability comparison  
+- Margin distribution across divisions  
+- Identification of financial imbalance  
 
----
+### Cost vs Margin Diagnostics
+- Cost vs Sales scatter visualization  
+- Bubble size representing profit  
+- Margin-risk product identification  
 
-### **Cost vs Margin Diagnostics**
-- Cost vs Sales scatter plot (bubble size represents profit)  
-- Identification of cost-heavy, low-margin products  
-- Dynamic margin-risk flagging  
-
----
-
-### **Profit Concentration (Pareto) Analysis**
-- Profit contribution by product  
-- Cumulative profit percentage curve  
+### Profit Concentration (Pareto Analysis)
+- Cumulative profit contribution curve  
 - Dependency indicators:
-  - % of profit from top 3 products  
-  - % of profit from top 5 products  
-  - % of profit from top 10 products  
-  - Number of products generating approximately 80% of total profit  
+  - % profit from top 3 products  
+  - % profit from top 5 products  
+  - % profit from top 10 products  
+  - Number of products generating ~80% of total profit  
 
----
-
-### **Margin Volatility Analysis**
+### Margin Volatility Analysis
 - Monthly average gross margin trend  
 - Margin standard deviation over time  
-- Identification of unstable pricing or cost patterns  
+- Detection of unstable pricing or cost behavior  
 
----
-
-### **Data Export**
+### Data Export
 - Download filtered dataset as CSV  
 
 ---
 
-## **Tech Stack**
+## Business Insights Generated
+
+- A small subset of products contributes the majority of total profit  
+- Several high-revenue products operate at low margins  
+- Certain divisions show revenue-profit mismatch  
+- Profit concentration reveals structural dependency risk  
+- Margin volatility highlights financial instability periods  
+
+---
+
+## Strategic Recommendations
+
+- Reprice high-volume, low-margin products  
+- Renegotiate sourcing or manufacturing costs  
+- Review and rationalize loss-making SKUs  
+- Diversify profit sources to reduce dependency risk  
+- Monitor margin volatility for financial stability  
+
+---
+
+## Tech Stack
 
 - Python  
 - Streamlit  
 - Pandas  
 - Plotly (Express and Graph Objects)  
 - Data Visualization  
-- Exploratory Data Analysis (EDA)  
+- Exploratory Data Analysis  
 
 ---
 
-## **Project Structure**
+## Project Structure
 
 ```
 project-root/
-
 │
 ├── app/
 │   └── app.py
@@ -117,7 +132,7 @@ project-root/
 
 ---
 
-## **How to Run Locally**
+## How to Run Locally
 
 Install dependencies:
 
@@ -131,7 +146,7 @@ Run the dashboard:
 streamlit run app/app.py
 ```
 
-The application will open in your browser at:
+Open in browser:
 
 ```
 http://localhost:8501
@@ -139,54 +154,36 @@ http://localhost:8501
 
 ---
 
-## **Deployment**
+## Deployment
 
-This dashboard is deployed using **Streamlit Cloud** with GitHub integration, enabling real-time interaction and cloud-based access.
+The application is deployed using Streamlit Cloud with GitHub integration, enabling real-time interaction and continuous deployment.
 
----
-
-## **Business Insights Generated**
-
-- A small subset of products contributes the majority of total profit  
-- Some high-revenue products operate at low margins  
-- Certain divisions show imbalance between revenue and profitability  
-- Margin-risk products are dynamically identified  
-- Profit concentration reveals dependency risks  
-- Margin volatility highlights financial instability periods  
+Live link:  
+https://nikhil-profitability-dashboard.streamlit.app/
 
 ---
 
-## **Strategic Recommendations**
+## Conclusion
 
-- Reprice high-volume, low-margin products  
-- Renegotiate manufacturing or sourcing costs  
-- Review consistently loss-making products  
-- Diversify profit sources to reduce dependency risk  
-- Monitor margin volatility to stabilize financial performance  
+This project demonstrates how profitability-focused analytics can drive smarter business decisions beyond surface-level revenue metrics.
 
----
+It showcases:
 
-## **Conclusion**
-
-This project demonstrates how profitability-focused analytics enables smarter business decisions.
-
-By transforming transactional order data into an interactive analytics dashboard, stakeholders gain visibility into margin performance, product efficiency, and structural financial risks.
-
-The solution showcases end-to-end analytical capability, including:
-
-- Data cleaning  
+- Data cleaning and transformation  
 - KPI engineering  
-- Aggregation  
-- Visualization  
+- Financial performance analysis  
+- Interactive dashboard design  
 - Cloud deployment  
 
+The solution bridges data analytics with business strategy, making it suitable for data analyst, business intelligence, and machine learning-oriented roles.
+
 ---
 
-## **Author**
+## Author
 
-**Nikhil Singh**  
+Nikhil Singh  
 BCA (AI & ML) Student  
-Machine Learning & Data Analytics Enthusiast  
+Machine Learning and Data Analytics Enthusiast  
 
 GitHub: https://github.com/nikhilsingh-k  
-LinkedIn: https://www.linkedin.com/in/nikhilsingh-k  
+LinkedIn: https://www.linkedin.com/in/nikhilsingh-k/
