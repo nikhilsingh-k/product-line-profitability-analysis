@@ -18,6 +18,14 @@ The dashboard transforms raw transactional order data into actionable business i
 
 ---
 
+## Dashboard Preview
+
+![Dashboard Overview](assets/dashboard-overview.png)
+![Product Profitability](assets/product-profitability.png)
+![Pareto Analysis](assets/pareto-analysis.png)
+
+---
+
 ## Business Problem
 
 High sales volume does not always translate into high profitability.
@@ -126,6 +134,11 @@ project-root/
 ├── data/
 │   └── Nassau Candy Distributor.csv
 │
+├── assets/
+│   ├── dashboard-overview.png
+│   ├── product-profitability.png
+│   └── pareto-analysis.png
+│
 ├── requirements.txt
 └── README.md
 ```
@@ -181,7 +194,7 @@ The solution bridges data analytics with business strategy, making it suitable f
 
 ## Author
 
-Nikhil Kumar Singh  
+Nikhil Singh  
 BCA (AI & ML) Student  
 Machine Learning and Data Analytics Enthusiast  
 
