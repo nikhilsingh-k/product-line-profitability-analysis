@@ -196,7 +196,7 @@ The solution bridges data analytics with business strategy, making it suitable f
 
 Nikhil Kumar Singh  
 BCA (AI & ML) Student  
-Machine Learning and Data Analytics Enthusiast  
+Aspiring AI & Software Engineer | Machine Learning | Data Analytics  
 
 GitHub: https://github.com/nikhilsingh-k  
 LinkedIn: https://www.linkedin.com/in/nikhilsingh-k/
