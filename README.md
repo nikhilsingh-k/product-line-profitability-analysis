@@ -194,7 +194,7 @@ The solution bridges data analytics with business strategy, making it suitable f
 
 ## Author
 
-Nikhil Singh  
+Nikhil Kumar Singh  
 BCA (AI & ML) Student  
 Machine Learning and Data Analytics Enthusiast  
 
