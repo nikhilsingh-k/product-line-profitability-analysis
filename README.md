@@ -1,4 +1,4 @@
-# Nassau Candy Distributor – Profitability & Margin Dashboard
+# Nassau Candy Distributor – Profitability & Margin Intelligence Dashboard
 
 [Live Application](https://nikhil-profitability-dashboard.streamlit.app/)
 
@@ -11,104 +11,141 @@
 
 ## Overview
 
-This project is an end-to-end profitability analytics dashboard built using Streamlit.  
-It analyzes product-level and division-level financial performance to uncover margin inefficiencies, profit concentration risks, and cost-performance mismatches.
+This project is an end-to-end profitability intelligence dashboard built using Streamlit, Pandas, and Plotly.
 
-The dashboard transforms raw transactional order data into actionable business intelligence for strategic decision-making.
+It transforms raw transactional sales data into strategic financial insights by analyzing:
+
+- Product-level profitability  
+- Division performance  
+- Margin volatility  
+- Cost-to-sales diagnostics  
+- Profit concentration risk  
+
+The objective is to move beyond revenue reporting and enable margin-driven business decision-making.
+
+---
+
+## Live Demo
+
+Access the deployed dashboard here:
+
+https://nikhil-profitability-dashboard.streamlit.app/
 
 ---
 
 ## Dashboard Preview
 
 ![Dashboard Overview](assets/dashboard-overview.png)
-![Product Profitability](assets/product-profitability.png)
-![Pareto Analysis](assets/pareto-analysis.png)
+![Product Profitability Leaderboard](assets/product-profitability.png)
+![Pareto Profit Concentration](assets/pareto-analysis.png)
 
 ---
 
 ## Business Problem
 
-High sales volume does not always translate into high profitability.
+Revenue growth does not guarantee profitability.
 
-Distributors often face challenges such as:
+Distributors frequently encounter:
 
-- High-volume products generating low margins  
-- Revenue-profit imbalance across divisions  
+- High-volume products with low margins  
 - Hidden cost-heavy SKUs  
-- Profit concentration risk from limited products  
+- Revenue-profit mismatch across divisions  
+- Over-dependence on a small number of products  
+- Margin instability over time  
 
-This dashboard provides a structured analytical framework to identify and address these issues.
+This dashboard provides a structured analytical framework to uncover and quantify these risks.
 
 ---
 
-## Core Features
+## Key Features
 
 ### Interactive Filtering
 - Order date range selection  
 - Division multi-select filter  
-- Minimum gross margin threshold slider  
+- Minimum gross margin threshold  
 - Product name search  
-- AND-based filter logic  
+- Dynamic AND-based filtering logic  
 
-### KPI Dashboard
+### KPI Monitoring
 - Total Sales  
 - Gross Profit  
 - Gross Margin (%)  
 - Profit per Unit  
-- Filtered record count  
+- Record count  
 
 ### Product-Level Profitability
 - Top products by Gross Profit  
 - Top products by Gross Margin %  
-- Revenue Contribution %  
-- Profit Contribution %  
-- Expandable detailed KPI table  
+- Revenue contribution percentage  
+- Profit contribution percentage  
+- Expandable full KPI table  
 
 ### Division Performance Analysis
 - Revenue vs Gross Profit comparison  
-- Margin distribution across divisions  
-- Identification of financial imbalance  
+- Margin distribution visualization  
+- Performance imbalance detection  
 
 ### Cost vs Margin Diagnostics
-- Cost vs Sales scatter visualization  
-- Bubble size representing profit  
-- Margin-risk product identification  
+- Cost vs Sales scatter analysis  
+- Bubble size proportional to profit  
+- Margin risk identification  
 
 ### Profit Concentration (Pareto Analysis)
 - Cumulative profit contribution curve  
-- Dependency indicators:
-  - % profit from top 3 products  
-  - % profit from top 5 products  
-  - % profit from top 10 products  
-  - Number of products generating ~80% of total profit  
+- Top 3 / Top 5 / Top 10 dependency indicators  
+- 80% concentration threshold detection  
 
 ### Margin Volatility Analysis
-- Monthly average gross margin trend  
-- Margin standard deviation over time  
-- Detection of unstable pricing or cost behavior  
+- Monthly average margin trend  
+- Standard deviation tracking  
+- Detection of unstable pricing patterns  
 
 ### Data Export
 - Download filtered dataset as CSV  
 
 ---
 
-## Business Insights Generated
+## Analytical Insights
 
-- A small subset of products contributes the majority of total profit  
-- Several high-revenue products operate at low margins  
-- Certain divisions show revenue-profit mismatch  
-- Profit concentration reveals structural dependency risk  
-- Margin volatility highlights financial instability periods  
+The analysis reveals:
+
+- A small subset of products generates the majority of total profit  
+- Several high-revenue products operate at thin margins  
+- Certain divisions show revenue-profit imbalance  
+- Profit concentration exposes dependency risk  
+- Margin volatility highlights operational instability  
 
 ---
 
 ## Strategic Recommendations
 
-- Reprice high-volume, low-margin products  
-- Renegotiate sourcing or manufacturing costs  
-- Review and rationalize loss-making SKUs  
-- Diversify profit sources to reduce dependency risk  
-- Monitor margin volatility for financial stability  
+- Reprice high-volume, low-margin SKUs  
+- Optimize sourcing to reduce cost-heavy products  
+- Rationalize underperforming product lines  
+- Diversify profit contribution across products  
+- Monitor margin volatility for long-term stability  
+
+---
+
+## Research Paper
+
+A structured research-style report documenting the complete analytical workflow is included in the `report/` directory.
+
+The paper covers:
+
+- Problem definition  
+- Dataset overview  
+- Data preprocessing methodology  
+- Profitability metric engineering  
+- Pareto concentration modeling  
+- Margin volatility analysis  
+- Business interpretation  
+- Strategic recommendations  
+- Limitations and future scope  
+
+File location:
+
+report/Profitability_Analysis_Research_Paper.pdf
 
 ---
 
@@ -117,9 +154,9 @@ This dashboard provides a structured analytical framework to identify and addres
 - Python  
 - Streamlit  
 - Pandas  
-- Plotly (Express and Graph Objects)  
-- Data Visualization  
+- Plotly (Express + Graph Objects)  
 - Exploratory Data Analysis  
+- Financial Metric Engineering  
 
 ---
 
@@ -131,13 +168,23 @@ project-root/
 ├── app/
 │   └── app.py
 │
-├── data/
-│   └── Nassau Candy Distributor.csv
-│
 ├── assets/
 │   ├── dashboard-overview.png
 │   ├── product-profitability.png
 │   └── pareto-analysis.png
+│
+├── data/
+│   └── Nassau Candy Distributor.csv
+│
+├── notebooks/
+│   ├── 01_data_overview.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_profitability_metrics.ipynb
+│   ├── 04_visual_analysis.ipynb
+│   └── 05_insights_recommendations.ipynb
+│
+├── report/
+│   └── Profitability_Analysis_Research_Paper.pdf
 │
 ├── requirements.txt
 └── README.md
@@ -153,7 +200,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run the dashboard:
+Run the application:
 
 ```
 streamlit run app/app.py
@@ -169,9 +216,9 @@ http://localhost:8501
 
 ## Deployment
 
-The application is deployed using Streamlit Cloud with GitHub integration, enabling real-time interaction and continuous deployment.
+The dashboard is deployed using Streamlit Cloud with GitHub integration, enabling continuous deployment and live updates.
 
-Live link:  
+Live URL:  
 https://nikhil-profitability-dashboard.streamlit.app/
 
 ---
@@ -182,20 +229,21 @@ This project demonstrates how profitability-focused analytics can drive smarter 
 
 It showcases:
 
-- Data cleaning and transformation  
-- KPI engineering  
-- Financial performance analysis  
-- Interactive dashboard design  
+- Structured data preprocessing  
+- Financial metric engineering  
+- Advanced exploratory analysis  
+- Interactive dashboard development  
 - Cloud deployment  
+- Research-style documentation  
 
-The solution bridges data analytics with business strategy, making it suitable for data analyst, business intelligence, and machine learning-oriented roles.
+The solution bridges data analytics, business intelligence, and AI-driven financial reasoning.
 
 ---
 
 ## Author
 
 Nikhil Kumar Singh  
-BCA (AI & ML) Student  
+BCA (AI & ML)  
 Aspiring AI & Software Engineer | Machine Learning | Data Analytics  
 
 GitHub: https://github.com/nikhilsingh-k  
