@@ -1,5 +1,5 @@
-Project Title:
-Product Line Profitability & Margin Performance Analysis for Nassau Candy Distributor
+Project Title: Profitability Intelligence & Margin Risk Modeling  
+Case Study: Nassau Candy Distributor
 
 Problem Statement:
 For distributors like Nassau Candy, high sales volume does not always translate into high profitability. Several products generate strong revenue but operate at low margins due to high manufacturing or operational costs. Without clear visibility into product-level and division-level profitability, business decisions related to pricing, sourcing, and product portfolio optimization remain reactive.
