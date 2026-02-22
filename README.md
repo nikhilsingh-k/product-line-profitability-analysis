@@ -1,43 +1,55 @@
-# Nassau Candy Distributor – Profitability & Margin Intelligence Dashboard
+# Nassau Candy Distributor – Profitability Intelligence Dashboard
 
-[Live Application](https://nikhil-profitability-dashboard.streamlit.app/)
+[Live Application](https://nikhil-profitability-dashboard.streamlit.app/)  
+[Research Paper DOI](https://doi.org/10.5281/zenodo.18729616)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 ![Plotly](https://img.shields.io/badge/Plotly-Visualization-purple)
 ![Deployment](https://img.shields.io/badge/Deployment-Live-green)
+![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18729616.svg)
 
 ---
 
 ## Overview
 
-This project is an end-to-end profitability intelligence dashboard built using Streamlit, Pandas, and Plotly.
+This project presents an end-to-end profitability intelligence system designed to analyze product-level and division-level financial performance in a distribution-based business model.
 
-It transforms raw transactional sales data into strategic financial insights by analyzing:
+The system transforms raw transactional sales data into structured financial insights using engineered profitability metrics, Pareto modeling, cost diagnostics, and margin volatility analysis.
 
-- Product-level profitability  
-- Division performance  
-- Margin volatility  
-- Cost-to-sales diagnostics  
-- Profit concentration risk  
-
-The objective is to move beyond revenue reporting and enable margin-driven business decision-making.
+The objective is to move beyond revenue reporting and enable margin-driven strategic decision-making.
 
 ---
 
-## Live Demo
+## Live Dashboard
 
-Access the deployed dashboard here:
+Access the deployed Streamlit application:
 
 https://nikhil-profitability-dashboard.streamlit.app/
+
+---
+
+## Research Publication
+
+This project is formally published on Zenodo with a permanent DOI:
+
+https://doi.org/10.5281/zenodo.18729616
+
+The research paper documents:
+
+- Financial metric engineering  
+- Profit concentration modeling  
+- Margin volatility diagnostics  
+- Cost-to-sales imbalance detection  
+- Strategic portfolio optimization recommendations  
 
 ---
 
 ## Dashboard Preview
 
 ![Dashboard Overview](assets/dashboard-overview.png)
-![Product Profitability Leaderboard](assets/product-profitability.png)
-![Pareto Profit Concentration](assets/pareto-analysis.png)
+![Product Profitability](assets/product-profitability.png)
+![Pareto Analysis](assets/pareto-analysis.png)
 
 ---
 
@@ -45,118 +57,83 @@ https://nikhil-profitability-dashboard.streamlit.app/
 
 Revenue growth does not guarantee profitability.
 
-Distributors frequently encounter:
+Distribution businesses frequently face:
 
-- High-volume products with low margins  
-- Hidden cost-heavy SKUs  
+- High-volume, low-margin products  
+- Profit concentration dependency  
+- Cost-heavy SKUs reducing efficiency  
 - Revenue-profit mismatch across divisions  
-- Over-dependence on a small number of products  
 - Margin instability over time  
 
-This dashboard provides a structured analytical framework to uncover and quantify these risks.
+This system provides structured analytical visibility into these risks.
 
 ---
 
 ## Key Features
 
 ### Interactive Filtering
-- Order date range selection  
-- Division multi-select filter  
+- Date range selection  
+- Division multi-select  
 - Minimum gross margin threshold  
-- Product name search  
-- Dynamic AND-based filtering logic  
+- Product search  
+- Dynamic real-time metric recalculation  
 
 ### KPI Monitoring
 - Total Sales  
 - Gross Profit  
 - Gross Margin (%)  
 - Profit per Unit  
-- Record count  
+- Record Count  
 
-### Product-Level Profitability
-- Top products by Gross Profit  
-- Top products by Gross Margin %  
-- Revenue contribution percentage  
-- Profit contribution percentage  
-- Expandable full KPI table  
+### Product-Level Intelligence
+- Top products by gross profit  
+- Margin efficiency ranking  
+- Revenue vs profit comparison  
+- Contribution analysis  
 
-### Division Performance Analysis
-- Revenue vs Gross Profit comparison  
-- Margin distribution visualization  
-- Performance imbalance detection  
-
-### Cost vs Margin Diagnostics
-- Cost vs Sales scatter analysis  
-- Bubble size proportional to profit  
-- Margin risk identification  
-
-### Profit Concentration (Pareto Analysis)
-- Cumulative profit contribution curve  
-- Top 3 / Top 5 / Top 10 dependency indicators  
-- 80% concentration threshold detection  
+### Pareto Concentration Modeling
+- Cumulative profit percentage curve  
+- 80% threshold visualization  
+- Dependency risk detection  
 
 ### Margin Volatility Analysis
 - Monthly average margin trend  
-- Standard deviation tracking  
-- Detection of unstable pricing patterns  
+- Stability diagnostics  
+- Operational risk signaling  
 
 ### Data Export
-- Download filtered dataset as CSV  
+- Download filtered data as CSV  
 
 ---
 
 ## Analytical Insights
 
-The analysis reveals:
-
 - A small subset of products generates the majority of total profit  
-- Several high-revenue products operate at thin margins  
-- Certain divisions show revenue-profit imbalance  
-- Profit concentration exposes dependency risk  
-- Margin volatility highlights operational instability  
+- Several high-revenue products operate at inefficient margins  
+- Profit generation is structurally concentrated  
+- Division-level financial imbalance exists  
+- Margin volatility indicates operational instability  
 
 ---
 
 ## Strategic Recommendations
 
 - Reprice high-volume, low-margin SKUs  
-- Optimize sourcing to reduce cost-heavy products  
-- Rationalize underperforming product lines  
-- Diversify profit contribution across products  
-- Monitor margin volatility for long-term stability  
-
----
-
-## Research Paper
-
-A structured research-style report documenting the complete analytical workflow is included in the `report/` directory.
-
-The paper covers:
-
-- Problem definition  
-- Dataset overview  
-- Data preprocessing methodology  
-- Profitability metric engineering  
-- Pareto concentration modeling  
-- Margin volatility analysis  
-- Business interpretation  
-- Strategic recommendations  
-- Limitations and future scope  
-
-File location:
-
-report/Profitability_Analysis_Research_Paper.pdf
+- Optimize supplier contracts for cost-heavy products  
+- Diversify profit contribution sources  
+- Implement margin threshold monitoring  
+- Track volatility as an early-warning system  
 
 ---
 
 ## Tech Stack
 
 - Python  
-- Streamlit  
 - Pandas  
-- Plotly (Express + Graph Objects)  
-- Exploratory Data Analysis  
+- Plotly  
+- Streamlit  
 - Financial Metric Engineering  
+- Exploratory Data Analysis  
 
 ---
 
@@ -184,7 +161,7 @@ project-root/
 │   └── 05_insights_recommendations.ipynb
 │
 ├── report/
-│   └── Profitability_Analysis_Research_Paper.pdf
+│   └── Profitability_Intelligence_Journal_Paper.pdf
 │
 ├── requirements.txt
 └── README.md
@@ -192,7 +169,7 @@ project-root/
 
 ---
 
-## How to Run Locally
+## Run Locally
 
 Install dependencies:
 
@@ -200,7 +177,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run the application:
+Run the dashboard:
 
 ```
 streamlit run app/app.py
@@ -214,36 +191,28 @@ http://localhost:8501
 
 ---
 
-## Deployment
+## Citation
 
-The dashboard is deployed using Streamlit Cloud with GitHub integration, enabling continuous deployment and live updates.
+If referencing this work in academic or professional contexts:
 
-Live URL:  
-https://nikhil-profitability-dashboard.streamlit.app/
+Nikhil Singh (2025). *Profitability Intelligence and Margin Risk Modeling for Product Portfolio Optimization in Distribution-Based Enterprises*. Zenodo. https://doi.org/10.5281/zenodo.18729616
 
 ---
 
 ## Conclusion
 
-This project demonstrates how profitability-focused analytics can drive smarter business decisions beyond surface-level revenue metrics.
+This project demonstrates how profitability-focused analytics can provide deeper strategic insight than revenue analysis alone.
 
-It showcases:
+By integrating metric engineering, Pareto modeling, volatility analysis, and interactive visualization, the system establishes a structured framework for data-driven portfolio optimization.
 
-- Structured data preprocessing  
-- Financial metric engineering  
-- Advanced exploratory analysis  
-- Interactive dashboard development  
-- Cloud deployment  
-- Research-style documentation  
-
-The solution bridges data analytics, business intelligence, and AI-driven financial reasoning.
+It bridges business intelligence with AI-oriented financial reasoning and scalable analytics deployment.
 
 ---
 
 ## Author
 
-Nikhil Kumar Singh  
-BCA (AI & ML)  
+Nikhil Singh  
+BCA (Artificial Intelligence & Machine Learning)  
 Aspiring AI & Software Engineer | Machine Learning | Data Analytics  
 
 GitHub: https://github.com/nikhilsingh-k  
