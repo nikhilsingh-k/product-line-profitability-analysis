@@ -211,7 +211,7 @@ It bridges business intelligence with AI-oriented financial reasoning and scalab
 
 ## Author
 
-Nikhil Singh  
+Nikhil Kumar Singh  
 BCA (Artificial Intelligence & Machine Learning)  
 Aspiring AI & Software Engineer | Machine Learning | Data Analytics  
 
