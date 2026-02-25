@@ -95,7 +95,7 @@ f_df = f_df[f_df['Gross Margin %'] >= min_margin]
 if prod_search.strip():
     f_df = f_df[f_df['Product Name'].str.contains(prod_search.strip(), case=False, na=False)]
 
-# ─── KPI cards – now with all 5 KPIs ────────────────────────────────────────
+# ─── KPI cards – with all 5 KPIs ────────────────────────────────────────────
 total_sales = f_df['Sales'].sum()
 total_profit = f_df['Gross Profit'].sum()
 total_units = f_df['Units'].sum()
@@ -126,7 +126,7 @@ with tab1:
         'Gross Profit': 'sum',
         'Gross Margin %': 'mean',
         'Units': 'sum',
-        'Profit per Unit': 'mean'  # already calculated in df
+        'Profit per Unit': 'mean'  
     }).reset_index().round(2)
     
     # Add contribution percentages
@@ -253,7 +253,7 @@ with tab4:
         </div>
         """, unsafe_allow_html=True)
 
-# ─── New: Margin Volatility Chart (added to Tab 1 or as separate section) ───
+# ─── Margin Volatility Chart ────────────────────────────────────────────────
 with tab1:
     st.subheader("Margin Volatility Over Time")
     
